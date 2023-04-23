@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notas de texto</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label for="nota">Nota:</label>
+			<textarea id="nota" name="nota" rows="4" cols="50"></textarea>
+			<input type="button" value="Guardar" onclick="guardarNotas()">
+		</form>
+		<div class="notas">
+			<a href="#" download="notas.txt" id="descargar" onclick="descargarNotas()">Descargar notas</a>
+			<div id="notas-guardadas"></div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
